@@ -30,8 +30,8 @@ function nowServing(katzDeli){
     var response = "There is nobody waiting to be served!";
     console.log(response);
     return response;
-  } 
-  else { 
+  }
+  else {
 // return the next person in line and then remove them from the line.
     var nextPerson = katzDeli.shift()
     var response = "Currently serving " + nextPerson + ".";
@@ -44,7 +44,7 @@ function takeANumber(katzDeli, name){
   // accept a line of people and his/her name
   // return position in line
   var position = katzDeli.length + 1;
-  katzDeli.push(name);  
+  katzDeli.push(name);
   var response = "Welcome, " + name + ". You are number " + position + " in line.";
   return response;
 }
